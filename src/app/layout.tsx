@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "vi_VN",
-    url: "https://minhanh-makeup.vn", // Placeholder URL
+    url: "https://ducnguyen1002.github.io/makeup-artist-portfolio/",
     siteName: "Minh Ánh Makeup Artist",
     title: "Minh Ánh | Makeup Artist Chuyên Nghiệp",
     description: "Tôn vinh vẻ đẹp tự nhiên của bạn. Dịch vụ trang điểm chuyên nghiệp cho cô dâu, sự kiện và kỷ yếu.",
