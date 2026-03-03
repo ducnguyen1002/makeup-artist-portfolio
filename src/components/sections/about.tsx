@@ -41,7 +41,7 @@ export function About() {
         <div className="w-full md:w-1/2 flex flex-col justify-center">
           <SectionTitle
             title="Sắc đẹp là sự tinh tế"
-            subtitle="Về Hoàng Minh Ánh"
+            subtitle="Về Minh Ánh"
             align="left"
             className="mb-8"
           />
@@ -53,11 +53,11 @@ export function About() {
             className="space-y-8"
           >
             <p className="text-lg md:text-xl text-burgundy/90 leading-relaxed font-light">
-              Với hơn 8 năm kinh nghiệm trong ngành làm đẹp chuyên nghiệp, chúng tôi tin rằng trang điểm không phải là che giấu mà là làm nổi bật những nét riêng biệt của mỗi người.
+              Với hơn 3 năm kinh nghiệm trong ngành làm đẹp chuyên nghiệp, Minh Ánh tin rằng trang điểm không phải là che giấu mà là làm nổi bật những nét riêng biệt của mỗi người.
             </p>
 
             <p className="text-base text-burgundy/80 leading-relaxed max-w-lg">
-              Tại Minh Ánh Beauty, mỗi lần chạm cọ đều là một sự trân trọng. Chúng tôi lắng nghe câu chuyện của bạn để tạo nên vẻ đẹp hoàn mỹ nhất cho những khoảnh khắc quan trọng nhất. Từ tiệc cưới lộng lẫy đến vẻ đẹp tự nhiên thường nhật, chúng tôi luôn cam kết mang lại sự hài lòng và tự tin tuyệt đối.
+              Mỗi lần chạm cọ với Minh Ánh đều là một sự trân trọng. Mình luôn lắng nghe câu chuyện của bạn để tạo nên vẻ đẹp hoàn mỹ nhất cho những khoảnh khắc quan trọng nhất. Từ tiệc cưới lộng lẫy đến vẻ đẹp tự nhiên thường nhật, mình luôn cam kết mang lại sự hài lòng và tự tin tuyệt đối.
             </p>
 
             <motion.div

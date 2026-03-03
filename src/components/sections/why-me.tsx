@@ -8,22 +8,22 @@ const FEATURES = [
   {
     icon: <Heart className="w-8 h-8" />,
     title: "Tận tâm",
-    description: "Luôn lắng nghe và chăm chút tỉ mỉ từng chi tiết để mang lại vẻ đẹp hoàn hảo nhất cho khách hàng."
+    description: "Mình luôn lắng nghe và chăm chút tỉ mỉ từng chi tiết để bạn tỏa sáng rạng rỡ nhất trong ngày trọng đại."
   },
   {
     icon: <ShieldCheck className="w-8 h-8" />,
     title: "Chuyên nghiệp",
-    description: "Kỹ thuật trang điểm hiện đại, sử dụng mỹ phẩm cao cấp và quy trình làm việc chuẩn mực."
+    description: "Sử dụng các dòng mỹ phẩm cao cấp nhất kết hợp kỹ thuật hiện đại, giúp bạn luôn tự tin với diện mạo của mình."
   },
   {
     icon: <Clock className="w-8 h-8" />,
     title: "Đúng giờ",
-    description: "Sự đúng giờ là tôn chỉ hàng đầu, giúp khách hàng hoàn toàn yên tâm trong những dịp quan trọng."
+    description: "Minh Ánh luôn tôn trọng thời gian của bạn, đảm bảo mọi khâu chuẩn bị đều diễn ra đúng kế hoạch."
   },
   {
     icon: <Users className="w-8 h-8" />,
-    title: "Đa nhiệm",
-    description: "Có khả năng điều phối và đảm nhiệm số lượng khách hàng lớn mà vẫn đảm bảo chất lượng đồng đều."
+    title: "Linh hoạt",
+    description: "Dù là trang điểm cá nhân hay phục vụ cả đoàn khách, mình luôn đáp ứng mọi yêu cầu với chất lượng tốt nhất."
   }
 ];
 
@@ -32,7 +32,7 @@ export function WhyMe() {
     <section className="py-24 px-6 bg-white relative overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <SectionTitle
-          title="Tại Sao Chọn Tôi?"
+          title="Tại Sao Chọn Minh Ánh?"
           subtitle="Giá trị cốt lõi"
         />
 

@@ -37,13 +37,19 @@ export function Navbar() {
   return (
     <nav
       className={cn(
-        "fixed top-0 left-0 w-full z-50 transition-all duration-300 px-6 py-4 lg:px-12 lg:py-8",
-        isScrolled
-          ? "bg-pink-white/80 backdrop-blur-md py-4 lg:py-6 border-b border-pink-pale"
-          : "bg-transparent"
+        "fixed top-0 left-0 w-full z-50 transition-all duration-300",
+        isScrolled || isMenuOpen
+          ? "bg-pink-white/95 backdrop-blur-md border-b border-pink-pale"
+          : "bg-transparent",
+        isMenuOpen ? "h-screen lg:h-auto" : ""
       )}
     >
-      <div className="max-w-7xl mx-auto flex items-center justify-between relative z-50">
+      <div
+        className={cn(
+          "max-w-7xl mx-auto flex items-center justify-between relative z-50 transition-all duration-300",
+          isScrolled || isMenuOpen ? "px-6 py-4 lg:px-12 lg:py-6" : "px-6 py-4 lg:px-12 lg:py-8"
+        )}
+      >
         <Link
           href="/"
           className="text-2xl lg:text-3xl font-serif text-burgundy tracking-widest relative group"
@@ -89,7 +95,7 @@ export function Navbar() {
         initial={false}
         animate={isMenuOpen ? { opacity: 1, x: 0 } : { opacity: 0, x: "100%" }}
         transition={{ type: "spring", damping: 30, stiffness: 300 }}
-        className="fixed inset-0 bg-pink-white z-40 lg:hidden flex flex-col items-center justify-center gap-10"
+        className="fixed inset-0 bg-pink-white z-40 lg:hidden flex flex-col items-center justify-center gap-10 h-dvh"
       >
         {NAV_ITEMS.map((item, index) => (
           <motion.div

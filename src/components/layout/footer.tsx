@@ -58,7 +58,7 @@ export function Footer() {
         </div>
 
         <div className="mt-24 text-[10px] uppercase tracking-[0.4em] text-burgundy/60">
-          © 2026 Hoàng Minh Ánh Beauty Artistry. Bảo lưu mọi quyền.
+          © 2026 Minh Ánh Makeup Artist. Bảo lưu mọi quyền.
         </div>
       </div>
     </footer>

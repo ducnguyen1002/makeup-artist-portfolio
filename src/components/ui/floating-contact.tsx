@@ -9,22 +9,22 @@ export function FloatingContact() {
   const facebookUrl = "https://facebook.com/hoangminhanh"; // Placeholder, update as needed
 
   return (
-    <div className="fixed bottom-8 right-8 z-100 flex flex-col gap-4">
+    <div className="fixed bottom-6 right-6 lg:bottom-8 lg:right-8 z-100 flex flex-col gap-3 lg:gap-4">
       {/* Facebook Button */}
       <motion.div
         whileHover={{ scale: 1.1, x: -5 }}
         whileTap={{ scale: 0.9 }}
         className="group relative flex items-center"
       >
-        <span className="absolute right-full mr-4 px-3 py-1 bg-white text-burgundy text-[14px] rounded-md shadow-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none border border-pink-pale">
+        <span className="absolute right-full mr-4 px-3 py-1 bg-white text-burgundy text-[14px] rounded-md shadow-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none border border-pink-pale hidden lg:block">
           Messenger
         </span>
         <Link
           href={facebookUrl}
           target="_blank"
-          className="w-14 h-14 bg-white border border-pink-pale text-burgundy rounded-full flex items-center justify-center shadow-xl hover:bg-pink-white transition-colors"
+          className="w-12 h-12 lg:w-14 lg:h-14 bg-white border border-pink-pale text-burgundy rounded-full flex items-center justify-center shadow-xl hover:bg-pink-white transition-colors"
         >
-          <Facebook size={24} />
+          <Facebook className="w-5 h-5 lg:w-6 lg:h-6" />
         </Link>
       </motion.div>
 
@@ -34,15 +34,15 @@ export function FloatingContact() {
         whileTap={{ scale: 0.9 }}
         className="group relative flex items-center"
       >
-        <span className="absolute right-full mr-4 px-3 py-1 bg-white text-burgundy text-[14px] rounded-md shadow-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none border border-pink-pale">
+        <span className="absolute right-full mr-4 px-3 py-1 bg-white text-burgundy text-[14px] rounded-md shadow-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none border border-pink-pale hidden lg:block">
           Zalo: {phoneNumber}
         </span>
         <Link
           href={`https://zalo.me/${phoneNumber}`}
           target="_blank"
-          className="w-14 h-14 bg-white border border-pink-pale text-burgundy rounded-full flex items-center justify-center shadow-xl hover:bg-pink-white transition-colors"
+          className="w-12 h-12 lg:w-14 lg:h-14 bg-white border border-pink-pale text-burgundy rounded-full flex items-center justify-center shadow-xl hover:bg-pink-white transition-colors"
         >
-          <MessageCircle size={24} />
+          <MessageCircle className="w-5 h-5 lg:w-6 lg:h-6" />
         </Link>
       </motion.div>
 
@@ -52,14 +52,14 @@ export function FloatingContact() {
         whileTap={{ scale: 0.9 }}
         className="group relative flex items-center"
       >
-        <span className="absolute right-full mr-4 px-3 py-1 bg-burgundy text-white text-[14px] rounded-md shadow-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
+        <span className="absolute right-full mr-4 px-3 py-1 bg-burgundy text-white text-[14px] rounded-md shadow-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none hidden lg:block">
           Gọi: {phoneNumber}
         </span>
         <Link
           href={`tel:${phoneNumber}`}
-          className="w-14 h-14 bg-burgundy text-white rounded-full flex items-center justify-center shadow-xl hover:bg-burgundy-hover transition-colors"
+          className="w-12 h-12 lg:w-14 lg:h-14 bg-burgundy text-white rounded-full flex items-center justify-center shadow-xl hover:bg-burgundy-hover transition-colors"
         >
-          <Phone size={24} className="animate-pulse" />
+          <Phone className="w-5 h-5 lg:w-6 lg:h-6 animate-pulse" />
         </Link>
       </motion.div>
     </div>
