@@ -17,7 +17,7 @@ export function About() {
             className="w-2/3 h-[400px] md:h-[600px] bg-pink-pale rounded-full overflow-hidden relative shadow-2xl shadow-pink-pale"
           >
             <ParallaxImage
-              src="/images/about.png"
+              src="/makeup-artist-portfolio/images/about.png"
               alt="Makeup Artist Portrait"
               containerClassName="w-full h-full"
             />
@@ -29,7 +29,7 @@ export function About() {
             className="w-1/3 h-[300px] md:h-[400px] bg-pink-pale rounded-3xl overflow-hidden self-end mb-12 shadow-xl shadow-pink-pale"
           >
             <ParallaxImage
-              src="/images/bridal.png"
+              src="/makeup-artist-portfolio/images/bridal.png"
               alt="Bridal Makeup Look"
               containerClassName="w-full h-full"
               offset={30}

@@ -84,7 +84,7 @@ export function Portfolio() {
                 <div
                   className="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-110"
                   style={{
-                    backgroundImage: `url(/images/${item.id === 1 || item.id === 7 ? 'bridal.png' : item.id === 2 ? 'about.png' : 'hero.png'})`
+                    backgroundImage: `url(/makeup-artist-portfolio/images/${item.id === 1 || item.id === 7 ? 'bridal.png' : item.id === 2 ? 'about.png' : 'hero.png'})`
                   }}
                 />
 

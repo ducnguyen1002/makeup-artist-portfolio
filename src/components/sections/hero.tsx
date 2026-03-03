@@ -19,7 +19,7 @@ export function Hero() {
       {/* Background Parallax Image */}
       <div className="absolute inset-0 z-0">
         <ParallaxImage
-          src="/images/hero.png"
+          src="/makeup-artist-portfolio/images/hero.png"
           alt="Aura Makeup Artist"
           containerClassName="w-full h-full"
           className="opacity-40"
