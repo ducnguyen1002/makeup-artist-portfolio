@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@theme {
+  --color-pink-white: #FFF9FA;
+  /* Slightly cleaner white-pink */
+  --color-pink-pale: #FCE7F3;
+  --color-burgundy: #72001c;
+  /* Slightly deeper, more rich burgundy */
+  --color-burgundy-hover: #5a0016;
+
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Inter", sans-serif;
+}
+
+:root {
+  --background: var(--color-pink-white);
+  --foreground: #110508;
+  /* Much darker charcoal with a hint of red for better contrast */
+  --card: #ffffff;
+  --card-foreground: #110508;
+  --popover: #ffffff;
+  --popover-foreground: #110508;
+  --primary: var(--color-burgundy);
+  --primary-foreground: #ffffff;
+  --secondary: var(--color-pink-pale);
+  --secondary-foreground: var(--color-burgundy);
+  --muted: #f4f4f5;
+  --muted-foreground: #52525b;
+  /* Darker muted text */
+  --accent: var(--color-pink-pale);
+  --accent-foreground: var(--color-burgundy);
+  --destructive: #ef4444;
+  --destructive-foreground: #fafafa;
+  --border: #e4e4e7;
+  --input: #e4e4e7;
+  --ring: var(--color-burgundy);
+  --radius: 0.5rem;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.parallax-container {
+  overflow: hidden;
+}
+
+.whitespace-relaxed {
+  padding-top: clamp(4rem, 10vw, 8rem);
+  padding-bottom: clamp(4rem, 10vw, 8rem);
+}
+
+.text-xs,
+.text-\[8px\],
+.text-\[10px\] {
+  font-size: 14px !important;
+}
+
+p,
+span,
+div,
+a,
+button,
+input {
+  font-size: max(14px, inherit);
+}
