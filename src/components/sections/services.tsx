@@ -33,7 +33,7 @@ const SERVICES = [
 
 export function Services() {
   return (
-    <section id="services" className="py-24 px-6 bg-white relative">
+    <section id="services" className="py-24 px-6 bg-linear-to-b from-white to-pink-white relative">
       <SectionTitle
         title="Dịch Vụ Của Tôi"
         subtitle="Sự Lựa Chọn Hoàn Hảo"

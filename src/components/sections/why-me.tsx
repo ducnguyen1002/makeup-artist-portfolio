@@ -29,7 +29,7 @@ const FEATURES = [
 
 export function WhyMe() {
   return (
-    <section className="py-24 px-6 bg-white relative overflow-hidden">
+    <section className="py-24 px-6 bg-linear-to-b from-pink-white to-white relative overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <SectionTitle
           title="Tại Sao Chọn Minh Ánh?"

@@ -14,26 +14,46 @@ const BRANDS = [
 ];
 
 export function Brands() {
+  const marqueeVariants = {
+    animate: {
+      x: [0, -1035], // Adjust based on content width roughly (items * gap)
+      transition: {
+        x: {
+          repeat: Infinity,
+          repeatType: "loop" as const,
+          duration: 30,
+          ease: "linear" as const,
+        },
+      },
+    },
+  };
+
+  const ALL_BRANDS = [...BRANDS, ...BRANDS, ...BRANDS, ...BRANDS];
+
   return (
-    <section className="py-24 bg-pink-white/50 border-y border-pink-pale">
-      <div className="max-w-7xl mx-auto px-6">
-        <h4 className="text-center text-[10px] uppercase tracking-[0.5em] text-burgundy/60 mb-16 font-medium">
+    <section className="py-16 bg-linear-to-b from-pink-white to-white border-y border-pink-pale/30 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-6 mb-10">
+        <h4 className="text-center text-[10px] uppercase tracking-[0.6em] text-burgundy/50 font-medium">
           Sản phẩm tin dùng từ các thương hiệu cao cấp
         </h4>
-        <div className="flex flex-wrap justify-center items-center gap-12 md:gap-24">
-          {BRANDS.map((brand, index) => (
-            <motion.div
-              key={brand.name}
-              initial={{ opacity: 0, y: 10 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.1, duration: 0.5 }}
-              whileHover={{ scale: 1.1 }}
-              className="text-2xl md:text-3xl font-serif text-burgundy/80 tracking-[0.2em] grayscale hover:grayscale-0 transition-all cursor-default"
+      </div>
+
+      <div className="relative flex overflow-x-hidden">
+        <motion.div
+          className="flex whitespace-nowrap gap-16 md:gap-32 items-center"
+          variants={marqueeVariants}
+          animate="animate"
+        >
+          {ALL_BRANDS.map((brand, index) => (
+            <div
+              key={`${brand.name}-${index}`}
+              className="text-2xl md:text-4xl font-serif text-burgundy/70 tracking-[0.3em] transition-all hover:text-burgundy cursor-default flex items-center"
             >
               {brand.name}
-            </motion.div>
+              <span className="ml-16 md:ml-32 w-1.5 h-1.5 rounded-full bg-burgundy/20" />
+            </div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

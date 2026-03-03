@@ -6,7 +6,7 @@ import { SectionTitle } from "@/components/ui/section-title";
 
 export function About() {
   return (
-    <section id="about" className="relative py-24 md:py-48 px-6 bg-pink-white overflow-hidden">
+    <section id="about" className="relative py-24 md:py-48 px-6 bg-linear-to-b from-pink-white to-white overflow-hidden">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16 md:gap-32">
         {/* Left Side: Images with Parallax */}
         <div className="relative w-full md:w-1/2 mt-12 md:mt-0 flex gap-6">

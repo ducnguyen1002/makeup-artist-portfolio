@@ -17,9 +17,9 @@ export default function Home() {
       <Hero />
       <About />
       <Services />
+      <Brands />
       <Portfolio />
       <WhyMe />
-      <Brands />
       <Footer />
       <FloatingContact />
     </main>

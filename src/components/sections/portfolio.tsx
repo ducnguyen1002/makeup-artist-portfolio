@@ -30,7 +30,7 @@ export function Portfolio() {
   );
 
   return (
-    <section id="portfolio" className="py-24 px-6 bg-pink-white">
+    <section id="portfolio" className="py-24 px-6 bg-linear-to-b from-white to-pink-white">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-16 gap-8">
           <SectionTitle
